@@ -1,10 +1,14 @@
 ---
-title: blah
-categories: blah
+layout: default
+title: typography
 group: "navigation"
----   
-<ul>
-  {% assign pages_list = site.pages %}
-  {% assign group = 'navigation' %}
-  {% include pages_list %}
-</ul>
+---
+<div>
+	<h1>J.Crew</h1>
+	<p>Design System</p>
+	<ul>
+	  {% assign pages_list = site.pages %}
+	  {% assign group = 'navigation' %}
+	  {% include pages_list %}
+	</ul>
+</div>
