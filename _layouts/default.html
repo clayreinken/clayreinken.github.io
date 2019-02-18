@@ -6,16 +6,32 @@
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
-			<div class="global--nav">
-				<div class=""></div>
+			<div class="global">
+				<div class="global--nav">
+					
+				</div>
+				<div class="global--subnav">
+					
+					<h2>Framework</h2>
+					<ul>
+					  {% assign pages_list = site.pages %}
+					  {% assign group = 'framework' %}
+					  {% include pages_list %}
+					</ul>
+					<h2>Components</h2>
+					<ul>
+					  {% assign pages_list = site.pages %}
+					  {% assign group = 'components' %}
+					  {% include pages_list %}
+					</ul>
+					<h2>Patterns</h2>
+					<ul>
+					  {% assign pages_list = site.pages %}
+					  {% assign group = 'patterns' %}
+					  {% include pages_list %}
+					</ul>					
+				</div>				
 			</div>
-			<nav>				
-				<ul>
-				  {% assign pages_list = site.pages %}
-				  {% assign group = 'navigation' %}
-				  {% include pages_list %}
-				</ul>
-			</nav>
 			<div class="container">
 			
 			{{ content }}
